@@ -1,0 +1,11 @@
+Git squash procedure
+git checkout development
+git pull origin development
+git checkout fb/DGOV-2585-Delete-Relationships-from-search
+git rebase development
+git status
+git add =====if any changes
+git rebase --continue
+git log
+git rebase -i HEAD~6 (6 indicates number of commits)
+git push -f origin fb/DGOV-2585-Delete-Relationships-from-search
